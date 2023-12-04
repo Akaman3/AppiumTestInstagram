@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 34
+    defaultConfig {
+        minSdkVersion 31
+        // ...
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    namespace = "com.instagram.android"
+
+}
+
+
+dependencies {
+
+    implementation 'io.appium:java-client:9.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.36'
+}
+
